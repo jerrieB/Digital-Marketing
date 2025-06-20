@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixolance - Transform Your Research with AI Power</title>    
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+              <img src="images/pixolance-logo.png" width="200" alt="pixolance-logo">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="services.html">How it Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="pricing.html">Pricing</a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex gap-2">
+                    <button class="btn btn-outline-light me-2">Contact us</button>
+                    <button class="btn btn-purple text-dark">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+<section class="hero-section" id="home"> 
+    <canvas id="sparkles-canvas" class="position-absolute top-0 start-0 w-100 h-100"></canvas>   
+    <div id="floating-papers" class="position-absolute top-0 start-0 w-100 h-100 overflow-hidden"></div>        
+    <div class="container position-relative">
+        <div class="row min-vh-100 align-items-center">
+            <div class="col-12">
+                <div class="text-center hero-content">
+                    <h1 class="display-1 fw-bold text-white mb-4 hero-title">
+                        Grow Your Business with
+                        <span class="gradient-text"> Digital Marketing</span>
+                    </h1>
+                    
+                    <p class="lead text-light-gray mb-5 mx-auto hero-subtitle" style="max-width: 600px;">
+                        We help brands increase visibility, generate leads, and drive sales through result-driven digital strategies.
+                    </p>
+                    
+                    <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 hero-buttons">
+                        <button class="btn btn-purple btn-lg px-4 text-dark">
+                            <i class="bi bi-rocket-takeoff me-2"></i>
+                            Get Started
+                        </button>
+                        <button class="btn btn-outline-purple btn-lg px-4">
+                            <i class="bi bi-play-circle me-2"></i>
+                            View Services
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>       
+</section>
+
+
+    <!-- Features Section -->
+    <section class="features-section py-5" id="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="display-4 fw-bold text-white mb-4">Our Digital Marketing Services</h2>
+                <p class="lead text-light-gray">Boost your brand with data-driven strategies and impactful digital solutions</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">
+                        <i class="bi bi-megaphone-fill"></i>
+                    </div>
+                    <h4 class="text-white mb-3">Social Media Marketing</h4>
+                    <p class="text-light-gray">Engage your audience and grow your brand presence across all major social platforms with targeted campaigns.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <h4 class="text-white mb-3">Search Engine Optimization</h4>
+                    <p class="text-light-gray">Improve your search rankings and drive organic traffic with customized SEO strategies that deliver results.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">
+                        <i class="bi bi-file-earmark-text"></i>
+                    </div>
+                    <h4 class="text-white mb-3">Content Marketing</h4>
+                    <p class="text-light-gray">Attract, inform, and convert your audience with high-quality blog posts, videos, and branded content.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">
+                        <i class="bi bi-envelope-paper"></i>
+                    </div>
+                    <h4 class="text-white mb-3">Email Marketing</h4>
+                    <p class="text-light-gray">Nurture leads and retain customers through engaging and automated email campaigns tailored to your audience.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">
+                        <i class="bi bi-bar-chart-fill"></i>
+                    </div>
+                    <h4 class="text-white mb-3">Performance Analytics</h4>
+                    <p class="text-light-gray">Track, analyze, and optimize campaign performance with detailed insights and real-time reporting tools.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card h-100">
+                    <div class="feature-icon">
+                        <i class="bi bi-lock-fill"></i>
+                    </div>
+                    <h4 class="text-white mb-3">Secure & Scalable</h4>
+                    <p class="text-light-gray">Our systems ensure your campaigns run on secure, scalable infrastructure with complete data protection.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- How It Works Section -->
+   <section class="how-it-works-section py-5" id="how-it-works">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-2">
+                <h2 class="display-4 fw-bold text-white mb-4">How We Drive Results</h2>
+                <p class="lead text-light-gray">A simple process to grow your brand online</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="step-card text-center">                   
+                    <div class="step-icon">
+                        <i class="bi bi-chat-dots-fill"></i>
+                    </div>
+                    <h4 class="text-white mb-3">Consult & Strategize</h4>
+                    <p class="text-light-gray">We start by understanding your goals and creating a tailored marketing strategy that aligns with your brand.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="step-card text-center">
+                    
+                    <div class="step-icon">
+                        <i class="bi bi-gear-wide-connected"></i>
+                    </div>
+                    <h4 class="text-white mb-3">Execute Campaigns</h4>
+                    <p class="text-light-gray">Our team launches targeted campaigns across channels like SEO, social media, and email to maximize impact.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="step-card text-center">
+               
+                    <div class="step-icon">
+                        <i class="bi bi-bar-chart-line-fill"></i>
+                    </div>
+                    <h4 class="text-white mb-3">Analyze & Optimize</h4>
+                    <p class="text-light-gray">We track performance, refine strategies, and continuously optimize your campaigns to ensure measurable growth.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Examples Section -->
+    <section class="examples-section py-5" id="why-choose-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="display-4 fw-bold text-white mb-4">Why Choose Us</h2>
+                <p class="lead text-light-gray">Proven strategies that deliver real business results</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div class="example-card">
+                    <div class="example-image">
+                        <i class="bi bi-megaphone-fill display-1 text-purple"></i>
+                    </div>
+                    <div class="example-content">
+                        <h5 class="text-white mb-2">Targeted Ad Campaigns</h5>
+                        <p class="text-light-gray mb-3">Boosted ROI by 300% for a local brand through precision-targeted Google & Meta ads.</p>
+                        <button class="btn btn-outline-purple btn-sm">See Case Study</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="example-card">
+                    <div class="example-image">
+                        <i class="bi bi-graph-up-arrow display-1 text-purple"></i>
+                    </div>
+                    <div class="example-content">
+                        <h5 class="text-white mb-2">SEO Growth</h5>
+                        <p class="text-light-gray mb-3">Increased organic traffic by 5x in 6 months for an eCommerce client through technical SEO and content strategy.</p>
+                        <button class="btn btn-outline-purple btn-sm">View Growth</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="example-card">
+                    <div class="example-image">
+                        <i class="bi bi-people-fill display-1 text-purple"></i>
+                    </div>
+                    <div class="example-content">
+                        <h5 class="text-white mb-2">Social Media Success</h5>
+                        <p class="text-light-gray mb-3">Generated 25K+ followers and improved engagement by 200% in 90 days for a fashion startup.</p>
+                        <button class="btn btn-outline-purple btn-sm">View Campaign</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="example-card">
+                    <div class="example-image">
+                        <i class="bi bi-laptop display-1 text-purple"></i>
+                    </div>
+                    <div class="example-content">
+                        <h5 class="text-white mb-2">Website Conversions</h5>
+                        <p class="text-light-gray mb-3">Redesigned a service website to boost lead conversions by 180% using CRO techniques and UX optimization.</p>
+                        <button class="btn btn-outline-purple btn-sm">Explore Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Pricing Section -->
+    <section class="pricing-section py-5" id="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-4 fw-bold text-white mb-4">Choose Your Plan</h2>
+                    <p class="lead text-light-gray">Flexible pricing for researchers of all levels</p>
+                </div>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h4 class="text-white">Starter</h4>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">19</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="bi bi-check text-purple me-2"></i>5 papers per month</li>
+                            <li><i class="bi bi-check text-purple me-2"></i>Basic presentations</li>
+                            <li><i class="bi bi-check text-purple me-2"></i>Email support</li>
+                            <li><i class="bi bi-check text-purple me-2"></i>Standard processing</li>
+                        </ul>
+                        <button class="btn btn-outline-purple w-100">Get Started</button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h4 class="text-white">Professional</h4>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">49</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="bi bi-check text-purple me-2"></i>25 papers per month</li>
+                            <li><i class="bi bi-check text-purple me-2"></i>All content formats</li>
+                            <li><i class="bi bi-check text-purple me-2"></i>Priority support</li>
+                            <li><i class="bi bi-check text-purple me-2"></i>Fast processing</li>
+                            <li><i class="bi bi-check text-purple me-2"></i>Multi-language support</li>
+                            <li><i class="bi bi-check text-purple me-2"></i>Custom branding</li>
+                        </ul>
+                        <button class="btn btn-purple w-100">Get Started</button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h4 class="text-white">Enterprise</h4>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">99</span>
+                                <span class="period">/month</span>
+                            </div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="bi bi-check text-purple me-2"></i>Unlimited papers</li>
+                            <li><i class="bi bi-check text-purple me-2"></i>All features included</li>
+                            <li><i class="bi bi-check text-purple me-2"></i>24/7 phone support</li>
+                            <li><i class="bi bi-check text-purple me-2"></i>Instant processing</li>
+                            <li><i class="bi bi-check text-purple me-2"></i>API access</li>
+                            <li><i class="bi bi-check text-purple me-2"></i>Team collaboration</li>
+                        </ul>
+                        <button class="btn btn-outline-purple w-100">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="display-5 fw-bold text-white mb-4">Ready to Transform Your Research?</h2>
+                    <p class="lead text-light-gray mb-4">Join thousands of researchers who are already using Pixolance</p>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                        <button class="btn btn-purple btn-lg px-5">
+                            <i class="bi bi-rocket me-2"></i>
+                            Start Free Trial
+                        </button>
+                        <button class="btn btn-outline-light btn-lg px-5">
+                            <i class="bi bi-calendar me-2"></i>
+                            Schedule Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-robot me-2 text-purple fs-3"></i>
+                        <span class="fw-medium fs-4 text-white">Pixolance</span>
+                    </div>
+                    <p class="text-light-gray mb-3">Transform your research with the power of artificial intelligence. Making complex research accessible to everyone.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light-gray me-3"><i class="bi bi-twitter fs-5"></i></a>
+                        <a href="#" class="text-light-gray me-3"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="#" class="text-light-gray me-3"><i class="bi bi-github fs-5"></i></a>
+                        <a href="#" class="text-light-gray"><i class="bi bi-envelope fs-5"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="text-white mb-3">Product</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html" class="text-light-gray footer-link">Digital Marketing</a></li>
+                        <li><a href="services.html" class="text-light-gray footer-link">Website Design</a></li>
+                        <li><a href="services.html" class="text-light-gray footer-link">App Development</a></li>
+                        <li><a href="services.html" class="text-light-gray footer-link">Content Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="text-white mb-3">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-light-gray footer-link">About</a></li>
+                        <li><a href="blog.html" class="text-light-gray footer-link">Blog</a></li>                
+                        <li><a href="contact.html" class="text-light-gray footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="text-white mb-3">Resources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light-gray footer-link">Documentation</a></li>
+                        <li><a href="#" class="text-light-gray footer-link">Help Center</a></li>
+                        <li><a href="#" class="text-light-gray footer-link">Community</a></li>
+                        <li><a href="#" class="text-light-gray footer-link">Status</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="text-white mb-3">Legal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="privacy.html" class="text-light-gray footer-link">Privacy</a></li>
+                        <li><a href="terms.php" class="text-light-gray footer-link">Terms</a></li>
+                        <li><a href="security.html" class="text-light-gray footer-link">Security</a></li>
+                  
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4" style="border-color: rgba(255, 255, 255, 0.1);">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-light-gray mb-0">&copy; 2025 Pixolance. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-light-gray mb-0">Made with <i class="bi bi-heart-fill text-purple"></i> for Pixolance</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

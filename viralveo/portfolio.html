@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Viralveo</title>
+    <meta name="description" content="Explore our collection of successful projects and see how we've helped businesses transform their digital presence.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3 gradient-text" href="index.html">Viralveo</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="btn btn-gradient" href="contact.html">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-5 cta-section text-white">
+        <div class="container py-5 text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4">Our Portfolio</h1>
+                    <p class="lead">
+                        Explore our collection of successful projects and see how we've helped businesses transform their digital presence.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <button class="btn btn-outline-primary filter-btn active" data-filter="all">All Projects</button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="web">Web Development</button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="mobile">Mobile Apps</button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="design">Design</button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="ecommerce">E-commerce</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row g-4" id="portfolioGrid">
+                <!-- Web Development Projects -->
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+                    <div class="card border-0 shadow-sm portfolio-card h-100">
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                                 class="card-img-top" alt="Corporate Website">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h5 class="text-white mb-2">Corporate Website</h5>
+                                    <p class="text-white-50 mb-3">Professional corporate website with CMS</p>
+                                    <button class="btn btn-light btn-sm" onclick="openModal('Corporate Website', 'Professional corporate website with content management system and responsive design.', 'React, Node.js, MongoDB')">
+                                        <i class="bi bi-eye me-1"></i>View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Web Development</span>
+                            <h5 class="card-title">Corporate Website</h5>
+                            <p class="card-text text-muted">Professional corporate website with CMS</p>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-dark">React</span>
+                                <span class="badge bg-light text-dark">Node.js</span>
+                                <span class="badge bg-light text-dark">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+                    <div class="card border-0 shadow-sm portfolio-card h-100">
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                                 class="card-img-top" alt="SaaS Dashboard">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h5 class="text-white mb-2">SaaS Dashboard</h5>
+                                    <p class="text-white-50 mb-3">Analytics dashboard with real-time data</p>
+                                    <button class="btn btn-light btn-sm" onclick="openModal('SaaS Dashboard', 'Comprehensive analytics dashboard for SaaS platform with real-time data visualization.', 'Next.js, TypeScript, PostgreSQL')">
+                                        <i class="bi bi-eye me-1"></i>View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Web Development</span>
+                            <h5 class="card-title">SaaS Dashboard</h5>
+                            <p class="card-text text-muted">Analytics dashboard with real-time data</p>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-dark">Next.js</span>
+                                <span class="badge bg-light text-dark">TypeScript</span>
+                                <span class="badge bg-light text-dark">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile App Projects -->
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="mobile">
+                    <div class="card border-0 shadow-sm portfolio-card h-100">
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                                 class="card-img-top" alt="Mobile Banking App">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h5 class="text-white mb-2">Mobile Banking App</h5>
+                                    <p class="text-white-50 mb-3">Secure banking app with biometric auth</p>
+                                    <button class="btn btn-light btn-sm" onclick="openModal('Mobile Banking App', 'Secure mobile banking application with biometric authentication and real-time notifications.', 'React Native, Firebase, Stripe')">
+                                        <i class="bi bi-eye me-1"></i>View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Mobile App</span>
+                            <h5 class="card-title">Mobile Banking App</h5>
+                            <p class="card-text text-muted">Secure banking app with biometric auth</p>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-dark">React Native</span>
+                                <span class="badge bg-light text-dark">Firebase</span>
+                                <span class="badge bg-light text-dark">Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="mobile">
+                    <div class="card border-0 shadow-sm portfolio-card h-100">
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/4393021/pexels-photo-4393021.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                                 class="card-img-top" alt="Food Delivery App">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h5 class="text-white mb-2">Food Delivery App</h5>
+                                    <p class="text-white-50 mb-3">On-demand delivery with tracking</p>
+                                    <button class="btn btn-light btn-sm" onclick="openModal('Food Delivery App', 'On-demand food delivery application with real-time tracking and payment integration.', 'Flutter, Firebase, Google Maps')">
+                                        <i class="bi bi-eye me-1"></i>View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Mobile App</span>
+                            <h5 class="card-title">Food Delivery App</h5>
+                            <p class="card-text text-muted">On-demand delivery with tracking</p>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-dark">Flutter</span>
+                                <span class="badge bg-light text-dark">Firebase</span>
+                                <span class="badge bg-light text-dark">Google Maps</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Projects -->
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="design">
+                    <div class="card border-0 shadow-sm portfolio-card h-100">
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                                 class="card-img-top" alt="Brand Identity Design">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h5 class="text-white mb-2">Brand Identity Design</h5>
+                                    <p class="text-white-50 mb-3">Complete brand package for startup</p>
+                                    <button class="btn btn-light btn-sm" onclick="openModal('Brand Identity Design', 'Complete brand identity package for innovative tech startup including logo and guidelines.', 'Figma, Illustrator, Photoshop')">
+                                        <i class="bi bi-eye me-1"></i>View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Design</span>
+                            <h5 class="card-title">Brand Identity Design</h5>
+                            <p class="card-text text-muted">Complete brand package for startup</p>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-dark">Figma</span>
+                                <span class="badge bg-light text-dark">Illustrator</span>
+                                <span class="badge bg-light text-dark">Photoshop</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-commerce Projects -->
+                <div class="col-lg-4 col-md-6 portfolio-item" data-category="ecommerce">
+                    <div class="card border-0 shadow-sm portfolio-card h-100">
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                                 class="card-img-top" alt="E-commerce Platform">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h5 class="text-white mb-2">E-commerce Platform</h5>
+                                    <p class="text-white-50 mb-3">Full-featured online store</p>
+                                    <button class="btn btn-light btn-sm" onclick="openModal('E-commerce Platform', 'Full-featured online store with payment processing and inventory management.', 'Shopify, React, Stripe')">
+                                        <i class="bi bi-eye me-1"></i>View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-info mb-2">E-commerce</span>
+                            <h5 class="card-title">E-commerce Platform</h5>
+                            <p class="card-text text-muted">Full-featured online store</p>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-dark">Shopify</span>
+                                <span class="badge bg-light text-dark">React</span>
+                                <span class="badge bg-light text-dark">Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Project Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="modalDescription"></p>
+                    <h6>Technologies Used:</h6>
+                    <p id="modalTech"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-primary">Get Similar Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h3 class="gradient-text mb-4">Viralveo</h3>
+                    <p class="text-light mb-4">
+                        We're a digital agency that creates exceptional digital experiences for brands that want to make a lasting impact.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="portfolio.html" class="text-light text-decoration-none">Portfolio</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <p class="text-light mb-2">
+                        <i class="bi bi-envelope me-2"></i>hello@Viralveo.com
+                    </p>
+                    <p class="text-light mb-2">
+                        <i class="bi bi-telephone me-2"></i>+1 (555) 123-4567
+                    </p>
+                    <p class="text-light mb-0">
+                        <i class="bi bi-geo-alt me-2"></i>123 Design Street, Creative City
+                    </p>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-light mb-0">&copy; 2024 Viralveo. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-light text-decoration-none me-3">Terms of Service</a>
+                    <a href="#" class="text-light text-decoration-none">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>

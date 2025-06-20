@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viralveo - Digital Agency</title>
+    <meta name="description" content="Award-winning digital agency specializing in web development, mobile apps, and brand identity design.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3 gradient-text" href="index.html">Viralveo</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="btn btn-gradient" href="contact.html">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center justify-content-center text-white position-relative">
+        <div class="hero-bg"></div>
+        <div class="container text-center position-relative">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <h1 class="display-1 fw-bold mb-4 hero-title">
+                        We Create
+                        <span class="d-block gradient-text">Digital Experiences</span>
+                        That Matter
+                    </h1>
+                    <p class="lead mb-5 text-light">
+                        Award-winning digital agency specializing in web development, mobile apps, and brand identity design.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                        <a href="portfolio.html" class="btn btn-light btn-lg px-4">
+                            <i class="bi bi-arrow-right me-2"></i>View Our Work
+                        </a>
+                        <a href="about.html" class="btn btn-outline-light btn-lg px-4">
+                            <i class="bi bi-play me-2"></i>Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-4 fw-bold mb-4">Our Services</h2>
+                    <p class="lead text-muted">
+                        We offer comprehensive digital solutions to help your business thrive.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm service-card">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-4">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text text-muted">
+                                Custom websites and web applications built with cutting-edge technologies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm service-card">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-4">
+                                <i class="bi bi-phone"></i>
+                            </div>
+                            <h5 class="card-title">Mobile Apps</h5>
+                            <p class="card-text text-muted">
+                                Native and cross-platform mobile applications for iOS and Android.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm service-card">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-4">
+                                <i class="bi bi-palette"></i>
+                            </div>
+                            <h5 class="card-title">Brand Identity</h5>
+                            <p class="card-text text-muted">
+                                Complete brand identity design including logos, guidelines, and assets.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="services.html" class="btn btn-outline-primary btn-lg">
+                    View All Services <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Preview -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-4 fw-bold mb-4">Featured Work</h2>
+                    <p class="lead text-muted">
+                        Take a look at some of our recent projects and see how we've helped businesses achieve their goals.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                                 class="card-img-top" alt="E-commerce Platform">
+                            <div class="portfolio-overlay">
+                                <a href="portfolio.html" class="btn btn-light btn-sm">
+                                    <i class="bi bi-arrow-up-right me-1"></i>View Project
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Web Development</span>
+                            <h5 class="card-title">E-commerce Platform</h5>
+                            <p class="card-text text-muted">Modern e-commerce platform with advanced features</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/147413/twitter-facebook-together-exchange-of-information-147413.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                                 class="card-img-top" alt="Mobile Banking App">
+                            <div class="portfolio-overlay">
+                                <a href="portfolio.html" class="btn btn-light btn-sm">
+                                    <i class="bi bi-arrow-up-right me-1"></i>View Project
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Mobile App</span>
+                            <h5 class="card-title">Mobile Banking App</h5>
+                            <p class="card-text text-muted">Secure and intuitive mobile banking application</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                                 class="card-img-top" alt="Brand Identity">
+                            <div class="portfolio-overlay">
+                                <a href="portfolio.html" class="btn btn-light btn-sm">
+                                    <i class="bi bi-arrow-up-right me-1"></i>View Project
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-warning mb-2">Design</span>
+                            <h5 class="card-title">Brand Identity</h5>
+                            <p class="card-text text-muted">Complete brand identity for tech startup</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="portfolio.html" class="btn btn-outline-primary btn-lg">
+                    View All Projects <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-4 fw-bold mb-4">What Clients Say</h2>
+                    <p class="lead text-muted">
+                        Don't just take our word for it. Here's what our clients have to say about working with us.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="card-text fst-italic mb-4">
+                                "The team delivered an exceptional website that exceeded our expectations. Their attention to detail and professionalism is outstanding."
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" 
+                                     class="rounded-circle me-3" width="50" height="50" alt="Alex Thompson">
+                                <div>
+                                    <h6 class="mb-0">Alex Thompson</h6>
+                                    <small class="text-muted">TechStart Inc.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="card-text fst-italic mb-4">
+                                "Our mobile app has been a huge success thanks to their innovative design and flawless development. Highly recommended!"
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <img src="https://images.pexels.com/photos/1130626/pexels-photo-1130626.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" 
+                                     class="rounded-circle me-3" width="50" height="50" alt="Maria Garcia">
+                                <div>
+                                    <h6 class="mb-0">Maria Garcia</h6>
+                                    <small class="text-muted">Fashion Forward</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="card-text fst-italic mb-4">
+                                "Working with this agency was a game-changer for our business. They understood our vision and brought it to life perfectly."
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" 
+                                     class="rounded-circle me-3" width="50" height="50" alt="James Wilson">
+                                <div>
+                                    <h6 class="mb-0">James Wilson</h6>
+                                    <small class="text-muted">Global Solutions</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 cta-section text-white">
+        <div class="container py-5 text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-4 fw-bold mb-4">Ready to Start Your Project?</h2>
+                    <p class="lead mb-5">
+                        Let's work together to bring your vision to life. Get in touch with us today and let's discuss your next digital project.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                        <a href="contact.html" class="btn btn-light btn-lg px-4">
+                            Get Started <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                        <a href="portfolio.html" class="btn btn-outline-light btn-lg px-4">
+                            View Our Work
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h3 class="gradient-text mb-4">Viralveo</h3>
+                    <p class="text-light mb-4">
+                        We're a digital agency that creates exceptional digital experiences for brands that want to make a lasting impact.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="portfolio.html" class="text-light text-decoration-none">Portfolio</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <p class="text-light mb-2">
+                        <i class="bi bi-envelope me-2"></i>hello@Viralveo.com
+                    </p>
+                    <p class="text-light mb-2">
+                        <i class="bi bi-telephone me-2"></i>+1 (555) 123-4567
+                    </p>
+                    <p class="text-light mb-0">
+                        <i class="bi bi-geo-alt me-2"></i>123 Design Street, Creative City
+                    </p>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-light mb-0">&copy; 2024 Viralveo. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-light text-decoration-none me-3">Terms of Service</a>
+                    <a href="#" class="text-light text-decoration-none">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="container-fluid mt-3">
+    <div class="container">
+  <div class="row justify-content-between align-items-center disclaimer-banner">
+    <div class="col-md-10">
+      <strong>Disclaimer:</strong>
+      The content on this website provided by <strong>Viralveo</strong> is intended for general informational purposes only.
+      It should not be considered professional advice. By continuing to use this site, you acknowledge and agree that the
+      information is offered as-is and may not apply to your specific situation.
+    </div>
+    <div class="col-md-2 text-md-end mt-3 mt-md-0">
+      <button class="disclaimer-btn">Accept</button>
+    </div>
+  </div>
+</div>
+</div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
