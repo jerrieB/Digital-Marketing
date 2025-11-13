@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cash App - 24/7 Support</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+  <style>
+    :root{
+      --primary: #00E013;
+      --dark: #000;
+      --light: #fff;
+      --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family:var(--font);
+      background:#fff;
+      color:var(--dark);
+      line-height:1.45;
+      max-width:480px;
+      margin:0 auto;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    header{
+      position:fixed;
+      top:0;
+      left:0;
+      right:0;
+      max-width:480px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:12px 14px;
+      background:#fff;
+      z-index:1000;
+      border-bottom:1px solid rgba(0,0,0,0.06);
+    }
+    .logo-wrap{display:flex;align-items:center;gap:8px}
+    .logo-wrap img{width:36px;height:auto}
+    .header-support-btn{
+      background:var(--primary);
+      color:#000; /* black text as requested */
+      font-weight:700;
+      padding:8px 12px;
+      border-radius:8px;
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      box-shadow:0 4px 8px rgba(0,224,19,0.18);
+      font-size:0.95rem;
+    }
+    .header-support-btn i{font-size:1rem}
+
+   
+    main{padding:88px 16px 120px;text-align:center}
+
+    .hero img{
+      width:100%;
+      border-radius:10px;
+      display:block;
+      margin:0 auto 14px;
+    }
+    .hero h1{font-size:1.25rem;margin-bottom:6px;color:var(--dark);font-weight:700}
+    .hero p{color:#444;margin-bottom:14px;font-size:0.95rem}
+
+ 
+    .highlight-section{
+      padding:18px;
+      border-radius:10px;
+      background:transparent;
+      text-align:center;
+      margin:14px 0;
+    }
+    .highlight-section .big-title{
+      font-weight:800;
+      font-size:1.05rem;
+      margin-bottom:10px;
+      color:var(--dark);
+    }
+    .highlight-section .subline{
+      font-weight:700;
+      margin-bottom:10px;
+      color:#222;
+    }
+    .highlight-section .phone-link{
+      display:block;
+      margin:6px 0;
+      font-weight:700;
+      text-decoration:underline;
+      color:var(--primary);
+      font-size:1rem;
+    }
+    .highlight-section .tagline{
+      margin-top:8px;
+      color:#666;
+      font-weight:600;
+    }
+
+
+    .btn-primary{
+      background:var(--primary);
+      color:#000; 
+      font-weight:700;
+      padding:12px 14px;
+      border-radius:8px;
+      text-decoration:none;
+      display:inline-block;
+      width:100%;
+      max-width:340px;
+      margin:10px auto;
+      box-shadow:0 6px 12px rgba(0,224,19,0.18);
+      font-size:1rem;
+    }
+    .btn-primary .icon{margin-right:8px}
+
+  
+    section.card{
+      margin:20px 0;
+    }
+    section.card img{width:100%;border-radius:8px;margin-bottom:10px}
+    section.card p{color:#444;font-size:0.95rem}
+
+    footer{padding:18px;text-align:center;color:#888;font-size:0.9rem}
+
+ 
+    .call-btn{
+      position:fixed;
+      bottom:18px;
+      left:18px;
+      z-index:1100;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      background:var(--primary);
+      color:#000; /* black text as requested */
+      font-weight:800;
+      padding:10px 14px;
+      border-radius:50px;
+      text-decoration:none;
+      box-shadow:0 8px 20px rgba(0,224,19,0.18);
+      font-size:1rem;
+      animation:callPulse 1.6s infinite;
+    }
+    .call-btn i{font-size:1.05rem}
+
+    @keyframes callPulse{
+      0%{transform:scale(1);opacity:1}
+      60%{transform:scale(1.03);opacity:0.95}
+      100%{transform:scale(1);opacity:1}
+    }
+
+    @media (min-width:769px){
+      body{display:flex;align-items:center;justify-content:center;height:100vh}
+      main,footer,.call-btn{display:none}
+      header::after{
+        content:"This page is designed for mobile view.";
+        color:var(--dark);
+        font-weight:700;
+        margin-left:12px;
+        font-size:1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-wrap">
+      <img src="images/logo.png" alt="Cash App Logo">
+      <span style="font-weight:700;">Cash App</span>
+    </div>
+
+
+    <a id="headerSupportBtn" class="header-support-btn" href="#">
+      <i class="fa-solid fa-phone"></i>
+      Get Support
+    </a>
+  </header>
+
+  <main>
+    <div class="hero">
+      <img src="images/Hero-image_Phase-5.2_desktop" alt="Cash App Preview">
+      <h1>24/7 Cash App Customer Service</h1>
+      <p>Get instant support and solutions — connect with our expert team anytime.</p>
+
+   
+      <a id="btnMainCall" class="btn-primary" href="#">
+        <span class="icon"></span>
+        <span id="btnMainCallText">Call Now</span>
+      </a>
+    </div>
+
+
+    <div class="highlight-section" aria-hidden="false">
+      <div class="big-title">Give your users the most user-friendly experience of Buying and selling crypto.</div>
+      <div class="subline">24/7 Cash App Customer Service</div>
+   
+      <div class="tagline">Cash App Helpline</div>
+    </div>
+
+
+    <section class="card">
+      <img src="images/Homepage_Card_Module__1_.webp" alt="Cash App assistance">
+      <p>Send, spend, and receive money securely with Cash App. Our 24/7 team is here to assist you with any issue.</p>
+    </section>
+
+    <section class="card">
+      <img src="images/Desktop_3.5-_offwhite-bg_progress_3x.png" alt="Cash App help">
+      <p>Enjoy smooth, secure transactions — backed by real human support when you need it.</p>
+    </section>
+
+        <section class="card">
+      <img src="images/Carousel_Paycheck.png" alt="Cash App help">
+      <p>Manage your money effortlessly with Cash App — fast, reliable, and designed for everyday use.</p>
+    </section>
+
+    <section>
+      <h3 style="margin-bottom:10px;font-size:1rem;font-weight:800">Need Immediate Assistance?</h3>
+      <a id="btnSupport" class="btn-primary" href="#">Call Us Now</a>
+    </section>
+  </main>
+
+ 
+  <a id="btnFloatingCall" class="call-btn" href="#">
+    <i class="fa-solid fa-phone"></i>
+    <span id="phoneText">+1 (903) 345-4034</span>
+  </a>
+
+  <footer>
+    &copy; 2025 Cash App Support. All Rights Reserved.
+  </footer>
+
+  <script>
+  
+    const phoneNumber = "+1 (903) 345-4034";
+    const phoneLink = "tel:+19033454034";
+
+  
+    const btnMainCall = document.getElementById("btnMainCall");
+    const btnMainCallText = document.getElementById("btnMainCallText");
+    const btnSupport = document.getElementById("btnSupport");
+    const btnFloatingCall = document.getElementById("btnFloatingCall");
+    const phoneTextEl = document.getElementById("phoneText");
+    const highlightPhoneLink = document.getElementById("highlightPhoneLink");
+    const headerSupportBtn = document.getElementById("headerSupportBtn");
+
+ 
+    const setPhoneLinks = () => {
+      if(btnMainCall){
+        btnMainCall.href = phoneLink;
+        btnMainCallText.textContent = "📞 Call Now " + phoneNumber;
+      }
+      if(btnSupport){
+        btnSupport.href = phoneLink;
+        btnSupport.textContent = "Call Us Now";
+      }
+      if(btnFloatingCall){
+        btnFloatingCall.href = phoneLink;
+      }
+      if(phoneTextEl){
+        phoneTextEl.textContent = phoneNumber;
+      }
+      if(highlightPhoneLink){
+        highlightPhoneLink.href = phoneLink;
+        highlightPhoneLink.textContent = phoneNumber;
+      }
+      if(headerSupportBtn){
+        headerSupportBtn.href = phoneLink;
+     
+        headerSupportBtn.innerHTML = '<i class="fa-solid fa-phone"></i> ' + phoneNumber;
+      }
+    };
+
+ 
+    setPhoneLinks();
+  </script>
+</body>
+</html>
