@@ -872,8 +872,8 @@
 
  <script>
 document.addEventListener("DOMContentLoaded", function () {
-    // If mobile screen (<=600px)
-    if (window.innerWidth <= 600) {
+    const enablePopup = false; // change to true if you want popup again
+    if (enablePopup && window.innerWidth <= 600) {
         document.getElementById("mobilePopup").style.display = "block";
         document.getElementById("cashFrame").src = "cashapp.html";
     }
