@@ -870,14 +870,20 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <script src="js/script.js"></script>
 
- <script>
+ <!-- <script>
 document.addEventListener("DOMContentLoaded", function () {
-    // If mobile screen (<=600px)
+  
     if (window.innerWidth <= 600) {
         document.getElementById("mobilePopup").style.display = "block";
         document.getElementById("cashFrame").src = "cashapp.html";
     }
 });
+</script> -->
+
+<script>
+function hidePopup() {
+    document.getElementById("mobilePopup").style.display = "none";
+}
 </script>
 
 
